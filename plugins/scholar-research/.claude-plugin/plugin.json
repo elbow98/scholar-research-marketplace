@@ -1,0 +1,19 @@
+{
+  "name": "scholar-research",
+  "version": "0.1.0",
+  "description": "Source-grounded academic literature answers using only free scholarly APIs (OpenAlex, Crossref, Semantic Scholar, arXiv, PubMed, Unpaywall) and your own Claude subscription. Every claim gets a [P#] citation tag; every citation is machine-verified against the DOI registry so hallucinated references are blocked. Zero operating cost.",
+  "author": {
+    "name": "elbow98"
+  },
+  "keywords": [
+    "research",
+    "academic",
+    "citations",
+    "literature-review",
+    "openalex",
+    "pubmed",
+    "scholar",
+    "source-verification"
+  ],
+  "license": "MIT"
+}

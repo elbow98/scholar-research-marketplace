@@ -1,0 +1,23 @@
+{
+  "name": "scholar-research-marketplace",
+  "description": "Scholar-research — source-grounded academic answers from free scholarly APIs + your own Claude subscription.",
+  "owner": {
+    "name": "elbow98",
+    "url": "https://github.com/elbow98"
+  },
+  "plugins": [
+    {
+      "name": "scholar-research",
+      "description": "Source-grounded academic literature answers with machine-verified citations. Free APIs only; runs on your own Claude subscription.",
+      "source": "./plugins/scholar-research",
+      "category": "productivity",
+      "tags": [
+        "research",
+        "academic",
+        "citations",
+        "literature-review",
+        "scholar"
+      ]
+    }
+  ]
+}
