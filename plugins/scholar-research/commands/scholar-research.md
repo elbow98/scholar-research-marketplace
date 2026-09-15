@@ -14,8 +14,11 @@ search → screening → close reading → source-tagged synthesis → citation
 machine-verification gate) using only free scholarly APIs via
 `${CLAUDE_PLUGIN_ROOT}/skills/scholar-research/scripts/scholar.py`.
 
-Every factual claim ends with a `[P#]` tag; every reference is verified against
-the DOI registry before the answer is emitted (`인용 검증: N/N MATCH`). Follow the
-skill's SKILL.md exactly — do not skip the verification gate.
+Every factual claim ends with a `[P#]` tag (papers) or `[W#]` tag (primary time
+series from the `data` layer); every reference passes the double gate — DOI/
+title/author/year/retraction machine check plus claim-to-excerpt matching —
+before the answer is emitted (`인용 검증: N/N MATCH · 주장-근거 대조 m/m 지지`).
+Follow the skill's SKILL.md exactly — do not skip the verification gate, and never
+fabricate backtest or computed numbers without a `[W#]` series (SKILL.md §10).
 
 If `$ARGUMENTS` is empty, ask the user for their research question first.
